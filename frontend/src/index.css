@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: "Montserrat",sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  img.logo {
+    height: 120px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 0px; /* Adjust margin as needed */
+  }
+  
+  /* Additional styles for better visibility */
+  img.logo:hover {
+    opacity: 0.8;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #4077ae;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1e558b; 
+    border-radius: 10px;
+  }
+
+  i{
+    cursor: pointer;
+
+  }
+  i:hover{
+    color: white;
+  }
+
+  .a {
+      animation: a 1s infinite;
+  }
+
+  @keyframes a {
+      0% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0.5;
+      }
+  }
+
+  .g {
+      animation: g 1s infinite;
+  }
+
+  @keyframes g {
+      0% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
+  input,textarea{
+    height: 40px;
+    border: 1px solid gray;
+    width: 100%;
+    padding-left: 20px;
+  }
+  input:focus{
+    outline: none;
+    border: 2px solid gray;
+  }
+  textarea{
+    height: 100px;
+  }
+
+  
